@@ -1,0 +1,45 @@
+/*h1 {
+    background: linear-gradient(45deg, #dd0031, #c3002f, #ff6f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+  }
+  
+hr {
+border: 1px solid #ccc;
+margin: 20px 0;
+}
+
+p {
+font-size: 18px;
+font-family: 'Verdana', sans-serif;
+text-align: center;
+}
+
+button {
+background: linear-gradient(45deg, #dd0031, #c3002f, #ff6f00);
+color: white;
+border: none;
+padding: 10px 20px;
+margin: 10px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+button:hover {
+background: linear-gradient(45deg, #c3002f, #dd0031, #ff6f00);
+}
+
+button:active {
+background: linear-gradient(45deg, #a60028, #c3002f, #e65c00);
+}
+
+button:focus {
+outline: none;
+}
+
+*/

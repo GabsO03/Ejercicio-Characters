@@ -1,0 +1,52 @@
+<h1>{{name}}</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{name}}</dd>
+  
+    <td>Edad:</td>
+    <dd>{{age}}</dd>
+  
+    <td>Método:</td>
+    <dd>{{ getheroDescription() }}</dd>
+  
+    <td>Capitalizado:</td>
+    <dd>{{capitalizedName}}</dd>
+</dl>
+
+<button *ngIf="name !== 'Iron Man'" (click)="changeHero()" class="btn btn-primary mx-2">
+    Cambiar nombre
+</button>
+
+<button (click)="changeAge()" class="btn btn-primary">
+    Cambiar edad
+</button>
+
+<button *ngIf="name === 'Iron Man'" (click)="reset()" class="btn btn-primary mx-2">
+    Reset
+</button>
+
+<!--<p>Listado de Héroes</p>
+
+<ul class="mt-2 list-group">
+  <li class="list-group-item"> Spiderman</li>
+  <li class="list-group-item"> Ironman</li>
+  <li class="list-group-item"> Martosman</li>
+  <li class="list-group-item"> Hulk</li>
+
+</ul>
+-->
+<hr>
+
+<p>Listado de Héroes</p>
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let name of heroeName" class="list-group-item">{{name}}</li>
+</ul>
+
+<button *ngIf="heroeName[heroeName.length-1] !== 'Nebula'" (click)="pop()" class="btn btn-primary">
+    Borrar último
+</button>
+<h3>{{getLastheroeBorrado()}}</h3>
+
+<ng-template></ng-template>
